@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #000000;
+    --cor-hover: #ffffffb3;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho{
+    width: 1124px;
+    margin: 61px auto 90px auto;
+}
+
+.cabecalho_atletas{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    margin-left: 20px;
+}
+
+.cabecalho_home{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: 24px; 
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    margin-left: 40px;
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rayssa_perfil, .medina_perfil, .bia_perfil, .flavia_perfil {
+    width: 10px;
+    margin: 0; 
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.borda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(assets/borda.png);
+    z-index: -1;
+}
+.texto {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
