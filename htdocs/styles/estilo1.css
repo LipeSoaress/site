@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left_login_image{
+    width: 35vw;
+}
+
+.left_login > h1 {
+    color: lawngreen;
+}
+
+.tela{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(63, 41, 84);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px black;
+
+}
+
+.card > h1 {
+    color: lawngreen;
+    font-weight: 800;
+    margin: 0;
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.texto > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(120, 64, 120);
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+    box-shadow: 0 10px 40px rgb(38, 38, 38);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.texto > label {
+    color: aliceblue;
+    margin-bottom: 10px;
+
+}
+
+.texto > input::placeholder{
+    color: aliceblue;
+}
+
+.btn_login{
+    width: 350px;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: purple;
+    background: lawngreen;
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px rgb(19, 72, 54);
+}
+
+.btn_login:hover{
+    color: chartreuse;
+    background-color:  rgb(130, 19, 222);
+}
+.banner{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background: black;
+}
