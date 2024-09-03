@@ -1,0 +1,73 @@
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+ 
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+ 
+.solar-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px; /* Espaçamento entre os planetas */
+}
+ 
+.planet img {
+    transition: transform 0.3s ease; /* Suave transição ao mudar de tamanho */
+    filter: drop-shadow(2px 2px 20px white); /* Efeito de brilho */
+}
+ 
+/* Efeito de hover para aumentar o tamanho dos planetas */
+.planet img:hover {
+    transform: scale(1.5);
+}
+ 
+/* Animação ao clicar no planeta */
+.zoom-link:active img {
+    animation: zoomIn 2s forwards;
+}
+ 
+/* Estilos para os planetas com tamanhos proporcionais */
+.terra1 img {
+    width: 250px;  /* Tamanho aceitável para a Terra */
+    height: 250px;
+}
+ 
+.marte1 img {
+    width: 200px;  /* Marte um pouco menor que a Terra */
+    height: 200px;
+}
+ 
+.jupiter1 img {
+    width: 300px;  /* Júpiter um pouco maior que a Terra */
+    height: 300px;
+}
+ 
+.banner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: black;
+}
