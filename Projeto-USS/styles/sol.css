@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    width: 550px;
+    margin: 0 0 0 450px;
+}
+.contexto{
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    margin: 0 0 0 -150px;
+}
+.titulo{
+    font-size: 30px;
+    color: var(--cor-terciaria);
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    margin: 0 0 0 -150px;
+}
+.planeta-terra {
+    width: 600px;
+    height: 350px;
+    transition: transform 0.3s ease;
+    margin: -270px 0 0 -700px;
+}
+.banner{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: black;
+}
+
+.foguete img{
+    position: absolute;
+    top: -50px;
+    right: -80px;
+    z-index: 2;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 white;
+}
+
+.foguete img:hover{
+    filter: drop-shadow(2px 2px 20px white);
+}
+
+.detalhecima{
+    position: absolute;
+    top: -120px;
+    right: 1330px;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+}
+.detalhe{
+    position: absolute;
+    top: 495px;
+    right: 1270px;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+}
+.detalhebaixo{
+    position: absolute;
+    top: 495px;
+    right: -50px;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+}

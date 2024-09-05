@@ -1,0 +1,115 @@
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solar-system {
+    display: flex;
+    gap: 40px;
+}
+
+/* Planetas */
+.planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planeta-sol, .planeta-terra, .planete-marte, .planeta-jupiter {
+    transition: transform 0.3s ease;
+}
+
+.planeta-sol {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: 10px 0 0 100px;
+        margin-left: 20px;
+        margin-right: -20px;    
+}
+
+.planeta-terra {
+    width: 250px;
+    height: 270px;
+    
+}
+
+.planete-marte {
+    width: 200px;
+    height: 200px;
+}
+
+.planeta-jupiter {
+    width: 300px;
+    height: 300px;
+}
+
+/* Animação ao clicar */
+.zoom-link:active .planeta-sol,
+.zoom-link:active .planeta-terra,
+.zoom-link:active .planete-marte,
+.zoom-link:active .planeta-jupiter {
+    animation: zoomIn 2s forwards;
+}
+
+/* Efeitos de hover */
+.planeta-sol:hover,
+.planeta-terra:hover,
+.planete-marte:hover,
+.planeta-jupiter:hover {
+    transform: scale(1.5);
+}
+
+.banner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: black;
+}
+.titulo{
+    position: absolute;
+    top: -50px;
+    left: 500px;
+}
+.sol img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.jupiter img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white);
+}
+.marte img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.terra img {
+    transition: transform 0.3s ease; 
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.space{
+    margin: -300px 0 0 0;
+}
