@@ -1,0 +1,170 @@
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solar-system {
+    display: flex;
+    gap: 40px;
+    margin-top: 70px;
+    margin-right: 260px;
+}
+
+/* Planetas */
+.planet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.estrela-sol, .planeta-terra, .planete-marte, .planeta-jupiter, .planeta-netuno, .planeta-urano, .planeta-mercurio, .planeta-saturno, .planeta-venus{
+    transition: transform 0.3s ease;
+}
+
+.sol {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: 10px 0 0 100px;
+    margin-left: 20px;
+    margin-right: 120px;
+}
+
+.planeta-terra {
+    width: 100px;
+}
+
+.planete-marte {
+    width: 70px;
+}
+
+.planeta-jupiter {
+    width: 165px;
+}
+
+.planeta-saturno{
+    width: 180px;
+    margin: 70px 0 0 0px;
+}
+
+.planeta-mercurio{
+    position: absolute;
+    width: 70px;
+    margin: 94px 0 0 -130px;
+}
+.planeta-venus{
+    position: absolute;
+    width: 100px;
+    margin: 92px 0 0 -78px;
+}
+.planeta-urano{
+    position: absolute;
+    width: 190px;
+    margin: 35px 0 0 -40px;
+}
+.planeta-netuno{
+    position: absolute;
+    width: 190px;
+    margin: 45px 0 0 80px;
+}
+/* Animação ao clicar */
+.zoom-link:active .estrela-sol,
+.zoom-link:active .planeta-terra,
+.zoom-link:active .planete-marte,
+.zoom-link:active .planeta-jupiter,
+.zoom-link:active .mercurio,
+.zoom-link:active .netuno,
+.zoom-link:active .urano {
+    animation: zoomIn 2s forwards;
+}
+
+/* Efeitos de hover */
+.estrela-sol:hover,
+.planeta-terra:hover,
+.planete-marte:hover,
+.planeta-jupiter:hover,
+.planeta-netuno:hover,
+.planeta-urano:hover,
+.planeta-mercurio:hover, 
+.planeta-venus:hover,
+.planeta-saturno:hover{
+    transform: scale(1.5);
+}
+
+.banner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background: black;
+}
+.titulo{
+    position: absolute;
+    top: 10px;
+    left: 640px;
+}
+.estrela-sol img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.mercurio img{
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white);
+}
+.urano{
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white);
+}
+.netuno{
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white);
+}
+.jupiter img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white);
+}
+.marte img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.terra img {
+    transition: transform 0.3s ease; 
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.saturno img {
+    transition: transform 0.3s ease; 
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.venus img {
+    transition: transform 0.3s ease; 
+    filter: drop-shadow(2px 2px 20px white); 
+}
+.space{
+    position: absolute;
+    margin: -240px 0 0 490px;
+    z-index: -1;
+}
