@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏫 Lançar Notas</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <a href="/">🏫 Lançar Notas</a>
+        <img src="/static/assets/A.png" alt="">
+        <a href="consulta">📝 Consultar Notas</a>
+    </nav>
+    <div class="cad_produtos">
+        <form action="/validar_notas" method="post" class="cad_produtos_formulario">
+
+            <h2>Média do Aluno</h2>
+
+            <label for="">Nome do Aluno:</label>
+            <input type="text" name="nome_aluno" id="nome_aluno"> 
+            <div>
+            <label for="">Nota 1:</label>
+            <input type="text" name="nota1_aluno" id="notas_1">
+
+            <label for="">Nota 2:</label>
+            <input type="text" name="nota2_aluno" id="notas_2">
+
+            <label for="">Nota 3:</label>
+            <input type="text" name="nota3_aluno" id="notas_3">
+            </div>
+            <div>
+                <button type="submit" class="cad_produtos_enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
