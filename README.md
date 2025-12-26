@@ -1,4 +1,4 @@
-# 🌌 Coamic Dreams
+# 🌌 Cosmic Dreams
 
 O Cosmic Dreams é um site interativo e educativo que oferece uma experiência imersiva para explorar o Sistema Solar. Com simulações visuais, informações científicas e design moderno, você pode aprender sobre planetas, estrelas e outros corpos celestes de forma envolvente e divertida.
 
